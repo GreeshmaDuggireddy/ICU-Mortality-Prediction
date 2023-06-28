@@ -19,3 +19,28 @@ The target attribute we are trying to predict is ‘hospital death’
 instances in our dataset - 83798 entries correspond to a survival
 7915 entries correspond to a death. As we can see, the dataset
 is skewed and this is addressed in the following sections.
+
+## Machine Learning Models
+
+Logistic Regression
+Decision Trees
+XGBoost
+
+## Results
+
+The Logistic Regression and Decision Tree algorithms perform well in accuracy on the whole dataset but fail to predict
+a death with proper precision when original data is used.
+Undersampling and Oversampling solve the metric problem to
+an extent when we deal with an unbalanced dataset, but they
+add their own baggage - undersampling results in data loss and
+oversampling creates lots of false data. The effects of sampling differ for each technique; some algorithms work better
+with undersampled data and some algorithms work better with
+oversampled data. ROC-AUC score is taken as a metric when
+class imbalance is present. XGBoost successfully boosts both
+the ROC and F1 scores. Recursive Feature Elimination results
+in a subset of features that give comparable metric values
+when compared with the results associated with the original set
+of columns. All the models make better generalizations when
+sampling techniques are applied to this problem. It betters
+the model’s capacity of predicting mortality for a patient
+appropriately.
