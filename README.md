@@ -22,8 +22,8 @@ is skewed and this is addressed in the following sections.
 
 ## Machine Learning Models
 
-Logistic Regression
-Decision Trees
+Logistic Regression,
+Decision Trees, and
 XGBoost
 
 ## Results
